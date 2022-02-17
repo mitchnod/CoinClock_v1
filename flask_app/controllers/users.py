@@ -98,7 +98,17 @@ def reset():
     if 'user_id' not in session:
         return redirect('/logout')
     data = {
-        "id" : session['user_id'],
+        "id" : session['user_id']
     }
     User.reset(data)
     return redirect('/dashboard')
+
+@app.route('/delete')
+def destroy():
+    if 'user_id' not in session:
+        return redirect('/logout')
+    data = {
+        "id" : session['user_id']
+    }
+    User.destroy(data)
+    return redirect('/logout')

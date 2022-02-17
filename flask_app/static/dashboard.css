@@ -45,3 +45,15 @@ input{
 #next:hover{
     background-color: seagreen;
 }
+
+#delete{
+    background-color:lightcoral;
+    color: maroon;
+    margin-right: 20px;
+    width: 120px;
+    margin-right: 20px;
+}
+
+#delete:hover{
+    background-color: rgb(197, 105, 105);
+}

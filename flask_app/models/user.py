@@ -68,3 +68,8 @@ class User:
     def reset(cls,data):
         query = "UPDATE users SET hours = null, pay = null WHERE id = %(id)s;"
         return connectToMySQL('db_coinclock').query_db(query,data)
+
+    @classmethod
+    def destroy(cls,data):
+        query = "DELETE FROM users WHERE id = %(id)s;"
+        return connectToMySQL('db_coinclock').query_db(query,data)
