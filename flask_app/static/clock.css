@@ -1,0 +1,51 @@
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+button{
+    border: none;
+    padding: 8px 10px;
+    background-color:rgb(60, 60, 60);
+    color: white;
+    border-radius: 5px;
+    margin: 10px 0 20px 0;
+    width: 100px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);
+}
+
+#reset{
+    background-color:lightcoral;
+    color: maroon;
+    margin-right: 20px;
+}
+
+#reset:hover{
+    background-color: rgb(197, 105, 105);
+}
+
+#content{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    color: seagreen;
+    font-size: 15vw;
+    margin: 0;
+}

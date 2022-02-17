@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{  url_for('static', filename='dashboard.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <a href="/logout">
+            <button>Logout</button>
+        </a>
+        <h1>Hello, <span>{{ user.first_name }}</span></h1>
+        <div id="schedule">
+            <h2>How many hours a day do you work?</h2>
+            <form action="/submit_hours" method="POST">
+                <input type="number" min="0" max="24" placeholder="0" name="hours"><br>
+                <button id="next">Next ></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

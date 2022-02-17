@@ -1,0 +1,85 @@
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-color: rgb(30, 30, 30);
+    color: seashell;
+    background-image: url('images/coin_logo.png');
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-position-x: 250px;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#form_container{
+    background-color: rgb(50, 50, 50);
+    padding: 35px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#content{
+    margin: 10px;
+}
+
+h2{
+    margin-top: 0;
+    text-align: center;
+}
+
+input{
+    border-radius: 2px;
+    border: 1px solid gray;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 250px;
+}
+
+button{
+    border: none;
+    padding: 8px 10px;
+    background-color: seagreen;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(41, 124, 77);
+}
+
+#alert{
+    color: orangered;
+    font-size: 12px;
+}
+
+#description{
+    margin-left: 10px;
+}
+
+h1{
+    font-size: 60px;
+    margin: 0;
+}
+
+span{
+    color: seagreen;
+}
+
+@media only screen and (max-width: 880px){
+    #content{
+        display: none;
+    }
+    body{
+        background-image: none;
+    }
+}

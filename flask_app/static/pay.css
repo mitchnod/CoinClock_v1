@@ -1,0 +1,51 @@
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+button{
+    border: none;
+    padding: 8px 10px;
+    background-color:rgb(60, 60, 60);
+    color: white;
+    border-radius: 5px;
+    margin: 10px 0 20px 0;
+    width: 100px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);
+}
+
+input{
+    margin-bottom: 30px;
+    height: 100px;
+    width: 300px;
+    background-color: rgb(60, 60, 60);
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+label,input{
+    font-size: 100px;
+    color: seagreen;
+}
+
+#submit:hover{
+    background-color: seagreen;
+}
+
+#back{
+    margin-right: 20px;
+}

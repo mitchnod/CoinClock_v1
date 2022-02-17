@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{  url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <h1>Welcome to <br><span>CoinClock</span></h1>
+            <p id="description">An easy way to count your coin!</p>
+        </div>
+
+        <div id="register">
+            <div id="form_container">
+                <h2>Register</h2>
+                <div id="form">
+                    {% with messages = get_flashed_messages(category_filter=['register']) %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <p id="alert">{{ message }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                    <form action="/register" method="POST">
+                        <input type="text" name="first_name" placeholder="First Name"><br>
+                        <input type="text" name="last_name" placeholder="Last Name"><br>
+                        <input type="text" name="email" placeholder="Email"><br>
+                        <input type="password" name="password" placeholder="Password"><br>
+                        <input type="password" name="password_confirm" placeholder="Confirm Password"><br>
+                        <button><strong>Register</strong></button>
+                    </form>
+                </div>
+            </div>
+            <p>Have an account? <a href="/login">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
