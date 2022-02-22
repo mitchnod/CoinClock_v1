@@ -68,4 +68,7 @@ button:hover{
     #login{
         width: 100%;
     }
+    input{
+        width: 250px;
+    }
 }
