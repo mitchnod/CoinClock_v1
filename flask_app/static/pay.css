@@ -38,8 +38,10 @@ input{
 }
 
 label,input{
-    font-size: 100px;
+    font-size: 9vw;
     color: seagreen;
+    width: 25vw;
+    height: 8vw;
 }
 
 #submit:hover{
